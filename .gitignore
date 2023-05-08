@@ -1,0 +1,13 @@
+# Pycache #
+Modules/__pycache__/
+# Pycharm env #
+.idea/
+# Wordlist dir but not contents #
+WordlistDock/*
+!WordlistDock/
+# Output dir #
+Results/
+# Log files #
+*.log
+# Hash files #
+hashes.txt
