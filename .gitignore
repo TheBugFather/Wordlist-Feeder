@@ -4,10 +4,12 @@ Modules/__pycache__/
 .idea/
 # Wordlist dir but not contents #
 WordlistDock/*
-!WordlistDock/
+!WordlistDock/.keep
 # Output dir #
 Results/
 # Log files #
 *.log
 # Hash files #
 hashes.txt
+# venv #
+venv/
