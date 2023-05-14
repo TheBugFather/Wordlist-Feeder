@@ -1,3 +1,4 @@
+# pylint: disable=E1131
 """ Built-in modules """
 import argparse
 import os
@@ -13,7 +14,7 @@ from Modules.utils import error_query, print_err
 EXEC_TIMEOUT = None
 
 
-def system_cmd(conf_obj: object, command: str, exec_time: int):
+def system_cmd(conf_obj: object, command: str, exec_time: int) -> bytes | bool:
     """
     Executes passed in system command and returns outs/errs data to write to file.
 
@@ -45,7 +46,7 @@ def system_cmd(conf_obj: object, command: str, exec_time: int):
     return out.strip()
 
 
-def command_parser(arg_cmd: str, cmd_name: str, wordlist_path: str):
+def command_parser(arg_cmd: str, cmd_name: str, wordlist_path: str) -> str:
     """
     Parses in executable name and wordlist path into command and returns it.
 
